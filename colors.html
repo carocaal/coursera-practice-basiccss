@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors</title>
+
+    <style>
+        body {
+            background-color: #c8caff;
+        }
+
+        footer {
+            margin-top: 20px;
+            background-color: #9094ff;
+        }
+
+        h1 {
+            font-family: Arial, sans-serif;
+            background-color: #1a18a8;
+            color: #e0dfff;
+            margin: 0;
+            padding: 20px;
+        }
+
+        p {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            color: #3333cc;
+            margin: 20px;
+        }
+
+        .important {
+            font-weight: bold;
+            color: #dfdfff;
+            background-color: #1a18a8;
+        }
+
+        /*For writing hex you'll have to write # followed by 6 digits/letters*/
+        .square-hex {
+            height: 50px;
+            width: 50px;
+            background-color: #3412db;
+            color: #dfdfff;
+        }
+
+        .square-hex-alpha {
+            height: 50px;
+            width: 50px;
+            background-color: #3412db80;
+        }
+
+
+        /*For writing hsl you'll have to write HSL(h, s, v)*/
+        .square-hsl {
+            height: 50px;
+            width: 50px;
+            background-color: hsl(193, 100%, 50%);
+        }
+
+        .square-hsl-alpha {
+            height: 50px;
+            width: 50px;
+            background-color: hsla(188, 100%, 50%, 0.5);
+        }
+
+        /*For writing rgba you'll have to write RGBA(r, g, b, a)*/
+        .square-rgba-alpha {
+            height: 50px;
+            width: 50px;
+            background-color: rgba(19, 33, 226, 0.5);
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+    <header>
+        <h1>CSS Colors</h1>
+    </header>
+
+    <h2>Here we have examples os color use using CSS.</h2>
+
+    <p>
+        Square filled with hexadecimal colors: #AABBCC:
+    </p>
+    <div class="square-hex">hello</div>
+
+
+    <p>
+        Square filled with square-hex-alpha colors AND transparency, #AABBCC80: :
+    </p>
+    <div class="square-hex-alpha"></div>
+
+
+    <p>
+        Square filled with HSL colors: hsl(193, 100%, 50%), (h, s, l):
+    </p>
+    <div class="square-hsl"></div>
+
+    <p>
+        Square filled with HSL colors AND transparency hsl(19, 33, 226, 0.5), (h, s, l, a):
+    </p>
+    <div class="square-hsl-alpha"></div>
+
+    <p>
+        Square filled with rgba colors AND transparency. Transparency, a, is optional. rgba(19, 33, 226, 0.5), (r, g, b,
+        a):
+    </p>
+    <div class="square-rgba-alpha"></div>
+
+    <p class="important"> Remember you can always calculate colors in figma or other websites like <a
+            href="https://www.color-hex.com/">colorhex.com</a>
+        or <a href="https://www.w3schools.com/colors/colors_picker.asp">w3schools.com</a></p>
+
+    <footer>
+        <p>Here is my footer yeah</p>
+    </footer>
+
+</body>
+
+</html>
