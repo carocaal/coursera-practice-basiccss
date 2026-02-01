@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>selector practice</title>
+</head>
+
+<style>
+    /*Si se declara dos veces una clase, el navegador probablemente use la segunda clase declarada como default. En las herramientas de inspección de código (ctrl+r) en los navegadores, se pueden ver y confirmar errores de estilo*/
+
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 20px;
+        background-color: #f9f9f9;
+        color: #35d327;
+    }
+
+    h1 {
+        color: #2e71ce;
+    }
+
+    h2 {
+        color: rgb(90, 126, 233);
+    }
+
+    h3 {
+        color: #27ae60;
+    }
+
+    .purple-text {
+        color: rgb(156, 16, 211);
+    }
+
+    article {
+        background: #fff;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    aside {
+        background: #ecf0f1;
+        padding: 15px;
+        margin-top: 20px;
+        border-left: 5px solid #3498db;
+    }
+
+    footer {
+        text-align: center;
+        padding: 10px;
+        background: #bdc3c7;
+        border-radius: 8px;
+    }
+
+    a {
+        color: #e73c3c;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+</style>
+
+<body>
+    <article>
+        <h1>All About Tacos</h1>
+        <section>
+            <h2>History</h2>
+            <p>Lorem 1</p>
+            <p>Lorem 2</p>
+            <p>Lorem 3</p>
+            <p>Lorem 4</p>
+            <p>Lorem 5</p>
+            <p>Lorem 6</p>
+            <p>Lorem 7</p>
+        </section>
+
+        <section>
+            <h2>Common Fillings</h2>
+            <ul>
+                <li>Al Pastor</li>
+                <li>Pollo</li>
+                <li>Barbacoa</li>
+                <li>Soyrizo</li>
+            </ul>
+        </section>
+    </article>
+
+    <article>
+        <h2>Taco Restaurants of Note</h2>
+        <p>Lorem 1</p>
+        <p class="purple-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Lorem 3</p>
+
+        <aside>
+            <h3>Learn More About Tacos</h3>
+            <ol>
+                <li><a href="https://en.wikipedia.org/wiki/Taco">Wikipedia: Tacos</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Wheat_tortilla">Wikipedia: Tortillas</a></li>
+                <li><a href="http://www.tacoipsum.com/">Taco Ipsum Generator</a></li>
+            </ol>
+        </aside>
+    </article>
+
+    <footer>
+        <p>This page handmade by <a href="https://en.wiktionary.org/wiki/awesome">Carolina.</a></p>
+    </footer>
+</body>
+
+</html>

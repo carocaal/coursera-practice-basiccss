@@ -1,0 +1,61 @@
+    /*Basic CSS Selectors: Element, Class(.) & ID(#)*/
+    h1 {
+        font-family: Arial, sans-serif;
+        background-color: #2a27ca;
+        color: #ded8ff;
+        margin: 0;
+        padding: 20px;
+    }
+
+    p {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        color: #4654f3;
+        margin: 20px;
+    }
+
+    a {
+        font-family: Arial, sans-serif;
+        color: #111062;
+        text-decoration: underline;
+        margin: 20px;
+        font-style: italic;
+    }
+
+    body {
+        background-color: #e9eaff;
+    }
+
+    .important-text:hover {
+        background-color: #8382e7;
+        color: #ded8ff
+    }
+
+    #lead {
+        font-style: italic;
+    }
+
+    /*Pseudoclasses
+        :hover (applies styles when an element is hovered over by the mouse)
+        Pseudoclasses must be added to the end of other selectors (e.g., .important:hover).*/
+    p::first-letter {
+        font-size: 120%;
+    }
+
+    /*Pseudoselector - style elements when hover, visited/unvisited links, click, etc.*/
+    footer p {
+        color: #f3f3ff;
+        background-color: #403f83;
+    }
+
+    footer a {
+        color: #ded8ff;
+        text-decoration: none;
+    }
+
+    /*Styles have to go from non-specific to specific. That's why hover has to be the last one
+        Hover effects are super cool for images.*/
+    footer a:hover {
+        color: #ff7cdc;
+        font-size: 120%;
+    }
